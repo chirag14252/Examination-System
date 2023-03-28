@@ -1,16 +1,11 @@
 package testApp;
 
 import java.awt.EventQueue;
-import javax.swing.*;  
+import javax.swing.*;
 
-import javax.swing.JFrame;
 import java.awt.Color;
-import javax.swing.JPanel;
 import java.awt.SystemColor;
-import javax.swing.JTextField;
-import javax.swing.JLabel;
 import java.awt.Font;
-import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -103,6 +98,12 @@ public class LoginPage extends LoginBtnWindow{
 		passwordField = new JPasswordField();
 		passwordField.setBounds(199, 205, 220, 25);
 		panel_1.add(passwordField);
+		
+		JLabel lblNewLabel_3 = new JLabel("");
+		ImageIcon icon = new ImageIcon(this.getClass().getResource("/lpu_logo.jpg"));
+		lblNewLabel_3.setIcon(icon);
+		lblNewLabel_3.setBounds(26, 99, 129, 129);
+		panel.add(lblNewLabel_3);
 		
  }
 }
